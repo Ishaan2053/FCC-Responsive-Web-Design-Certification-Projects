@@ -1,0 +1,170 @@
+body {
+    background-color: black;
+    color: white;
+    display: flexbox;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin: auto;
+    padding: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+    font-size: 20px;
+    border-right: 2px solid #bbb; 
+    position: fixed;    
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    border-color: #00CDAC;
+    border-right: 2px solid #bbb;
+    margin-left: 15px;
+    padding-right: 20px;
+
+}
+
+nav a:last-of-type {
+    border-right: none;
+}
+
+nav a:hover {
+    color: rgb(239, 239, 39);
+    transition: all 0.3s;
+}
+
+
+
+#Hero-text {
+    font-size: 80px;
+    font-family: 'Franklin';
+    margin-top: 300px;
+    transition: all 0.3s ease-in-out;
+}
+
+#Hero-text:hover {
+    color: rgb(67, 214, 231);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+#hero-img {
+
+    padding-right: 10px;
+    height: 100vh;
+    display: flex;
+
+}
+
+#heroimage {
+    border-radius: 75px;
+    background-position: left top;
+    background-repeat: repeat;
+    margin-top: 100px;
+    margin-left: 40px;
+    padding: 30px;
+    width: 800px;
+    height: 600px;
+    display: inline;
+    transition: all 0.3s ease-in-out;
+}
+
+#heroimage:hover {
+    color: rgb(67, 214, 231);
+    transform: scale(1.1);
+}
+
+#about {
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #1b1c1c;
+}
+
+#quotes {
+    padding: 20px;
+    position: relative;
+}
+
+#legacy {
+    padding: 20px;
+    font-size: 20px;
+}
+
+/*list Styling */
+
+ul {
+    background: #141414;
+    padding: 20px;
+    border-radius: 55px;
+}
+
+ul li {
+    background: #2b2b2b;
+    color: rgb(255, 255, 255);
+    margin: 15px;
+    border-radius: 50px;
+    text-align: left;
+}
+
+/* footer styling */
+#footer {
+    background-color: #252525;
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+}
+
+#footer p {
+    margin-bottom: 0;
+    display: inline;
+}
+
+#footer p:hover {
+    color: rgb(49, 159, 186);
+    transition: all 0.3s ease-in-out;
+    cursor: default;
+}
+
+.footer-icons {
+    background-color: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%);
+    margin: 0.35rem;
+}
+
+.footer-icons:hover {
+    color: #f0f8ff;
+    transition: all 0.3s ease-in-out;
+}
+
+/*carousel */
+
+.carousel-inner
+
+/* */
+    {
+    padding: 100px;
+    size: 10vh;
+}
+
+.carouselExampleIndicators {
+    padding: auto;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    padding: 10px;
+}
