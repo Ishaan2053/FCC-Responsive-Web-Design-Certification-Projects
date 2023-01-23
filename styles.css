@@ -1,0 +1,81 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color:rgb(64,0,110);
+    display: flexbox;
+}
+
+h1,
+h2,
+h5 {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 23px;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.button {
+    background-color: rgb(100, 30, 94);
+    font-size: 30px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgb(100, 30, 94);
+    color: rgb(236, 118, 199);
+}
+
+#footnote {
+    color: rgb(236, 118, 199);
+    text-align: center;
+    
+}
+
+/* footer styling */
+#footer {
+    background-color:rgb(54,1,92);
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 100;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+#footer p {
+    margin-bottom: 0;
+    display: inline;
+    transition: all 0.3s ease-in-out;
+}
+
+#footer p:hover {
+    color: rgb(236, 118, 199);
+    cursor: default;
+}
+
+.footer-icons {
+    color: rgb(100, 30, 94);
+    margin: 0.35rem;
+    transition: all 0.3s ease-out;
+}
+
+.footer-icons:hover {
+    color: rgb(236, 118, 199);
+}
