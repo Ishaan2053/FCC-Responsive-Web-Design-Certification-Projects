@@ -5,5 +5,4 @@ Please use this repository as a resource for inspiration and guidance, but do NO
 If you have any questions or feedback, please feel free to open an issue or contact me directly.
 
 ---
-
-* Source code of projects has been slightly altered to prevent plagarism. Build projects on your own. Copying this code will earn you a certification but won't get you the knowledge that comes with it.
+*Source code of projects has been slightly altered to prevent plagarism. Build projects on your own. Copying this code will earn you a certification but won't get you the knowledge that comes with it.
