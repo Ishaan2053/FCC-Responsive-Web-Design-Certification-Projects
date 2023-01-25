@@ -61,20 +61,19 @@ html, body {
 
 h1 {
     text-align: center;
-    color: white;
+    color: #c0afbf;
     
   }
  
   p{
     font-family: Tahoma;
     text-align: center;
-    color: white;
+    color: #c0afbf;
   }
   
   textarea {
     margin: 10px auto;
-    width: 300px;
-    border: 3px 3px 3px 3px;
+    border: 3px;
   }
   
   input {
@@ -89,7 +88,6 @@ h1 {
     overflow-wrap: normal;
     color: rgb(244, 152, 152);
     border-radius: 12px;
-    /*margin: 50px 400px 50px 400px;*/
     margin: 5vh 25vw 5vh 25vw;
     padding: 20px;  
     z-index: 1;
@@ -117,6 +115,7 @@ h1 {
   #survey-form .btn-primary {
     display: flex;
     justify-content: center;
+    margin: 0 25vw 0 25w;
     background-color: rgb(168, 44, 44);
     border-color: rgb(168, 44, 44);
     
@@ -131,14 +130,17 @@ h1 {
 
   #Textarea1{
     background-color: rgb(25, 26, 37);
+    color: #c0afbf;
   }
 
   #formFileMultiple {
     background-color: rgb(25, 26, 37);
+    color: #c0afbf;
   }
 
   #description_area {
     background-color: rgb(25, 26, 37);
+    color: #c0afbf;
   }
 
   #DataList{
@@ -151,8 +153,10 @@ h1 {
 
   #InputEmail {
     background-color: rgb(25, 26, 37);
+    color: #c0afbf;
   }
 
   #name {
     background-color: rgb(25, 26, 37);
+    color: #c0afbf;
   }
