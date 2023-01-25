@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Mahatma Gandhi Tribute Page</title>
+    <title>MovieFind Survey Form</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="Survey_Form.CSS">
 </head>
+<body>
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -32,8 +33,39 @@
             </div>
         </div>
     </div>
+    <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="https://github.com/Ishaan2053/MovieFind-Movie-Recommender-System" target="_blank">View MovieFind on GitHub</a>
+        <a class="nav-link" href="#contact" target="_blank">View Certificate</a>
+      </div>
 </nav>
-<body>
+<h1 id="title"> <i>MovieFind User Feedback Surevy Form</i> </h1>
+<p id="description"> Please fill out this form to let us know of your experience with using MovieFind! </p>
+
+<form id="survey-form">
+    <div class="mb-3">
+        <label for="Inputname" class="form-label">Name</label>
+        <input type="email" class="form-control" id="examplename" aria-describedby="NameHelp">
+    </div>
+    <div class="mb-3">
+      <label for="InputEmail" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+      <div class="col-auto">
+        <span id="passwordHelpInline" class="form-text">
+          Must be 8-20 characters long.
+        </span>
+      </div>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
     <footer id="footer">
         <div class="container-fluid">
             <!-- social media icons -->
@@ -50,3 +82,4 @@
         </div>
     </footer>
 </body>
+</html>

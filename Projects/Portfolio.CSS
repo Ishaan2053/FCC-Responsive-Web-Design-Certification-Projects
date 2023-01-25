@@ -154,6 +154,11 @@ body {
     text-align: center;
     margin-bottom: 15px;
   }
+
+  .imageAboutPage{
+    size: 100px;
+    z-index: 1;
+  }
   
   /* title screen effect */
   .Iam {
