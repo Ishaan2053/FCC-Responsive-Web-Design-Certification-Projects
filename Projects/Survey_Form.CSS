@@ -1,9 +1,24 @@
 /* Background */
-body {
+html, body {
     background-image: url(https://wallpaperaccess.com/full/8406764.gif);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 100%;
+    display: flexbox;
 }
+
+/* Navigation bar */
+.navbar-light .navbar-nav .nav-link {
+    color:rgb(248, 91, 91);
+    transition: all 0.3s;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:rgb(244, 152, 152);
+    box-shadow: 0 0 5px rgb(168, 44, 44);
+}
+
 
 
 /* footer styling */
@@ -24,7 +39,7 @@ body {
 }
 
 #footer p:hover {
-    color: rgb(236, 118, 199);
+    color: rgb(248, 91, 91);
     cursor: default;
 }
 
@@ -35,17 +50,16 @@ body {
 }
 
 .footer-icons:hover {
-    color: rgb(169, 5, 5);
+    color: rgb(244, 152, 152);
 }
 
 #footer sub {
-    color: rgb(168, 44, 44);
+    color: rgb(248, 91, 91);
 }
 
 h1 {
     text-align: center;
     color: white;
-    transition: all 0.3s;
     
   }
   p{
@@ -57,7 +71,7 @@ h1 {
   textarea {
     margin: 10px auto;
     width: 300px;
-    boder: 3px 3px 3px 3px;
+    border: 3px 3px 3px 3px;
   }
   
   input {
@@ -65,69 +79,33 @@ h1 {
     margin: 5px 0px;
   }
 
- /*{
-margin: 50px 80px 50px 80px;
-text-align: center;
-background-color: black;
-{}*/
 
 #survey-form {
     position: relative;
-    background:
-    border-radius: 2px;
+    color: rgb(244, 152, 152);
+    border-radius: 12px;
     overflow: auto;
     margin: 50px 400px 50px 400px;
-    padding: 20px;
+    padding: 20px;  
+    display: flexbox;
+    z-index: 1;
   }
   
   #survey-form:after{
    content: '';
-
    background: inherit; 
    position: absolute;
    left: -25px;
-   left position
    right: 0;
    top: -25px;  
-   top position 
    bottom: 0;
-   box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+   box-shadow: inset 0 0 0 400px rgba(255,255,255,0.05);
    filter: blur(10px);
+   display: flexbox;
+   z-index: -1;
   }
-  
-  
-  /* Form which you dont need */
-  .user-login-box{
-    position: relative;
-    margin-top: 50px;
-    text-align: center;
-    z-index: 1;
-  }
-  .user-login-box > *{
-    display: inline-block;
-    width: 200px;
-  }
-  
-  .user-icon{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    border-radius: 50%;
-    background-size: contain;
-    background-image: url(https://pbs.twimg.com/profile_images/725321660484583424/ArQ4fM3k.jpg);
-  }
-  
-  .user-name{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: white;
-  }
-  
-  input.user-password{
-    width: 120px;
-    height: 18px;
-    opacity: 0.4;
-    border-radius: 2px;
-    padding: 5px 15px;
-    border: 0;
+
+  .check1 {
+    background-color: rgb(248, 91, 91);
+    color: rgb(248, 91, 91);;
   }
