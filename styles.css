@@ -331,14 +331,16 @@ h5 {
     text-decoration: none;
     margin: 10px;
     border-radius: 50px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     text-align: center;
 }
 
 .button:hover {
     background-color: rgb(100, 30, 94);
     color: rgb(236, 118, 199);
-}
+    box-shadow: 0 0 10px rgb(236, 118, 199);
+    transform: scale(1.1);
+    }
 
 
 /* footer styling */
