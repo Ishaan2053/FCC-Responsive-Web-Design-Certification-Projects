@@ -33,37 +33,31 @@
                     <a class="nav-link" href="#">Resume</a>
                 </div>
             </div>
-        </div>
-        <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="https://github.com/Ishaan2053/MovieFind-Movie-Recommender-System"
-                target="_blank">View MovieFind on GitHub</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="https://github.com/Ishaan2053/MovieFind-Movie-Recommender-System"
+                    target="_blank">View MovieFind on GitHub</a>
+            </div>
         </div>
     </nav>
     <h1 id="title"> <i>MovieFind User Feedback Survey Form</i> </h1>
     <p id="description"> Please fill out this form to let us know of your experience with using MovieFind! </p>
 
     <form id="survey-form">
+        <div class="form-text">Fields marked with * are required</div><br>
         <div class="mb-3">
-            <label for="Inputname" class="form-label">Name</label>
-            <input type="text" class="form-control" id="examplename" aria-describedby="NameHelp"
+            <label for="Inputname" class="form-label">Name*</label>
+            <input type="text" class="form-control" id="name" aria-describedby="NameHelp"
                 placeholder="Enter your full name here">
             <div class="form-text">Enter your First Name twice if you officialy only use a first name</div>
         </div>
         <div class="mb-3">
-            <label for="InputEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+            <label for="InputEmail" class="form-label">Email Address*</label>
+            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
                 placeholder="Example:abc@gmail.com">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-            <div class="col-auto">
-                <span id="passwordHelpInline" class="form-text">
-                    Must be 8-20 characters long.
-                </span>
-            </div>
-            <label for="ProblemRadio" class="form-label">Did you Find any problems while using MovieFind?</label><br>
+
+            <label for="ProblemRadio" class="form-label">Did you Find any problems while using MovieFind?*</label><br><br>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                     value="option1">
@@ -72,33 +66,51 @@
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
                     value="option2">
-                <label class="form-check-label" for="inlineRadio2">No, Everything's Good</label><br>
+                <label class="form-check-label" for="inlineRadio2">No, Everything's Good</label>
             </div>
-            <label for="Datalsit" class="form-label">What kind of problems did you encounter while using
-                MovieFind?</label><br>
-            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Click to view categories">
+            <br>
+            <br>
+            <label for="Datalist" class="form-label">What kind of problems did you encounter while using
+                MovieFind?*</label><br>
+            <input class="form-control" list="datalistOptions" id="DataList" placeholder="Click to view categories" required>
             <datalist id="datalistOptions">
                 <option value="Poor Performance">
                 <option value="UI Bug">
                 <option value="Incorrect Data">
                 <option value="Unexpected Behaviour">
             </datalist>
+        </div><br>
+        <div class="mb-3">
+            <label for="description_area" class="form-label" >Please provide description of the encountered problem*</label>
+            <textarea class="form-control" id="description_area" rows="3" placeholder="Describe the issue in detail" required></textarea>
+            <div class="form-text">Don't include any personal information</div>
         </div>
+        <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Include images/videos to describe your issue (optional)</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+            <div class="form-text">Accepted formats include: jpg, jpeg, png, avi, mp4, mkv. Max filesize: 20MB</div>
+          </div>
+         
+        
         <label for="customRange" class="form-label">How satisfied you are with MovieFind?</label>
-        <input type="range" class="form-range" min="0" max="5" id="customRange">
+        <input type="range" class="form-range" min="0" max="6" id="customRange">
+        <div class="form-text"><pre>Very Dissatisfied                              Neutral                                Very Satisfied</pre> </div><br>
+
+        <div class="mb-3">
+            <label for="Textarea1" class="form-label">Feel free to provide additional
+                feedback</label>
+            <textarea class="form-control" id="Textarea1" rows="3" placeholder="Want to point out something we missed? Pen your thoughts here and we'll look into them" ></textarea>
+            <div class="form-text">Your feedback will be used to improve MovieFind</div><br>
+        </div>
 
         <div class="mb-3 form-check">
-            <div class="form-text">*Your feedback will be used to improve Moviefind</div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Feel free to provide additional
-                    feedback</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
 
             <input type="checkbox" class="form-check-input" id="Check1">
-            <label class="form-check-label" for="Check1">I understand that the shared information is true to the
+            <label class="form-check-label" for="Check1">I understand that the information shared is true to the
                 best of my knowlege</label>
         </div>
+        
+
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <footer id="footer">

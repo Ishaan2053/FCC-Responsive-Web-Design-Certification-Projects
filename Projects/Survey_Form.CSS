@@ -109,3 +109,46 @@ h1 {
     background-color: rgb(248, 91, 91);
     color: rgb(248, 91, 91);;
   }
+
+  #survey-form .btn-primary {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(168, 44, 44);
+    border-color: rgb(168, 44, 44);
+    
+  }
+
+  #survey-form .btn-primary:hover {
+    text-align: center;
+  
+    border-color: rgb(248, 91, 91); 
+    box-shadow: 0 0 10px rgb(168, 44, 44);
+  }
+
+  #Textarea1{
+    background-color: rgb(25, 26, 37);
+  }
+
+  #formFileMultiple {
+    background-color: rgb(25, 26, 37);
+  }
+
+  #description_area {
+    background-color: rgb(25, 26, 37);
+  }
+
+  #DataList{
+    background-color: rgb(25, 26, 37);
+  }
+
+  #inlineRadio1, #inlineRadio2, #Check1  {
+    background-color: rgb(25, 26, 37);
+  }
+
+  #InputEmail {
+    background-color: rgb(25, 26, 37);
+  }
+
+  #name {
+    background-color: rgb(25, 26, 37);
+  }
