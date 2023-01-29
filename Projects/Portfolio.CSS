@@ -155,9 +155,28 @@ body {
     margin-bottom: 15px;
   }
 
-  .imageAboutPage{
-    size: 100px;
+  .imageAboutPage {
+    display: flexbox;
+    height: 40vw;
+    width: 35vw;
     z-index: 1;
+    border-radius: 25px;
+    transition: all 0.2s;
+  }
+
+  .imageAboutPage:hover {
+    transform: scale(1.1);
+  }
+
+  #carousel-item {
+    max-width: 90vw;
+    max-height: 80vh;
+    margin: 50%;
+  }
+
+  #carousel-inner {
+    margin: 10%;
+
   }
   
   /* title screen effect */
