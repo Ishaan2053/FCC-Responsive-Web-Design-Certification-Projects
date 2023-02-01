@@ -168,16 +168,20 @@ body {
     transform: scale(1.1);
   }
 
-  #carousel-item {
+  .carousel-item {
     max-width: 90vw;
     max-height: 80vh;
-    margin: 50%;
-  }
-
-  #carousel-inner {
     margin: 10%;
-
   }
+
+  .carousel-inner {
+    margin: 10%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  margin: 5%;
+
+}
   
   /* title screen effect */
   .Iam {

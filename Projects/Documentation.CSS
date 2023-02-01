@@ -2,20 +2,21 @@
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
-    background-color: #181b21;
+    background-color: #121212;
     display: flexbox;
     overflow: auto;
   }
 
 /* footer styling */
 #footer {
-    background-color:rgb(54,1,92);
+    background-color:#1a1919;
     text-align: center;
-    color: #c0afbf;
-    position: relative;
+    color: rgb(114, 182, 242);
+    position: sticky;
     bottom: 0;
     min-height: 13vh;
     width: 100%;
+    z-index: 1;
 }
 
 #footer p {
@@ -25,37 +26,49 @@
 }
 
 #footer p:hover {
-    color: rgb(236, 118, 199);
+    color: rgb(48, 125, 192);
     cursor: default;
 }
 
 .footer-icons {
-    color: rgb(100, 30, 94);
+    color: rgb(114, 182, 242);
     margin: 0.35rem;
     transition: all 0.3s ease-out;
 }
 
 .footer-icons:hover {
-    color: rgb(236, 118, 199);
+    color: rgb(48, 125, 192);
 }
 
 #footer sub {
-    color: rgb(236, 118, 199);
+    color: rgb(114, 182, 242);
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color:rgb(114, 182, 242);
+  transition: all 0.3s;
+  border-radius: 10px;
+  margin: 10px 5px 0px 5px;
+  padding: 0px 10px 0px 10px;
+}
 
-  
+.navbar-light .navbar-nav .nav-link:hover {
+  color:rgb(48, 125, 192);
+  box-shadow: 0 0 5px rgb(114, 182, 242);
+}
+
+ 
   #main-header {
     position: fixed;
     display: flex;
-    top: 0;
+    top: 10;
     left: 0;
     height: 100%;
     min-width: 280px;
     max-width: 300px;
-    background-color: #18272b;
+    background-color: rgb(22, 26, 27);
+    display: flexbox;
     z-index: 1;
-    border-radius: 10px;
   }
   
   #nav flex-column {
@@ -69,6 +82,7 @@
     font-size: 1.6rem;
     text-align: center;
     padding: 1rem 0;
+    color:rgb(48, 125, 192);
   }
   
   #navbar ul {
@@ -81,7 +95,10 @@
   }
   
   #navbar ul li {
-    border: solid 1.3px #333;
+    padding: 0%;
+    margin: 0%;
+    font-size: 14px;
+ 
     
   }
   
@@ -92,15 +109,22 @@
     cursor: pointer;
     color: #222;
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(114, 182, 242);
+    transition: all 0.3s ease-in-out;
   }
   
+  #main-header #navbar ul li a:hover {
+    color: rgb(36, 228, 43);
+ 
+  }
   
   /* main section */
   #main-doc {
     position: absolute;
     margin-left: 320px;
-    padding: 2rem 1rem;
+    padding: 2rem;
+    color: rgb(114, 182, 242);
+  
   }
   
   #main-doc .main-section header {
@@ -111,7 +135,7 @@
   #main-doc .main-section .main-article {
     padding-left: 1.5rem;
     margin-bottom: .5rem;
-    color: #222;
+    color: rgb(243, 239, 239);
   }
   
   #main-doc .main-section .main-article p {
@@ -170,18 +194,8 @@
   
   }
 
-  .navbar-light .navbar-nav .nav-link {
-    color:rgb(248, 91, 91);
-    transition: all 0.3s;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding: 0px 10px 0px 10px;
-  }
-  .navbar-light .navbar-nav {
-    color:rgb(248, 91, 91);
-    transition: all 0.3s;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 19vw;
-    padding: 0px 10px 0px 10px;
+  .breadcrumb {
+    margin-left: 20vw;
+    z-index: 1;
+
   }

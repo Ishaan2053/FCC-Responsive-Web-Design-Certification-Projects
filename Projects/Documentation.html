@@ -20,7 +20,7 @@
 <body>
     <header id="main-header">
         <nav id="navbar">
-          <h1>JS Documentation</h1>
+          <h1>JavaScript Documentation</h1>
           <ul>
             <li class="nav-link"><a href="#introduction">Introduction</a></li>
             <li class="nav-link"><a href="#what-you">What you should already know</a></li>
@@ -39,7 +39,8 @@
           </ul>
         </nav>
       </header>
-    <nav class="navbar navbar-expand-lg navbar-light">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,15 +48,43 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="index.html">Home</a>
                     <a class="nav-link" href="#">Portfolio</a>
                     <a class="nav-link" href="#">Other Projects </a>
                     <a class="nav-link" href="#">Resume</a>
                 </div>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank">View Course</a>
+                    <a class="nav-link" href="#contact" target="_blank">View Certificate</a>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
             </div>
         </div>
     </nav>
-    
+
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Introduction</li>
+        </ol>
+      </nav>
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Introduction</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
         
         <main id="main-doc">
           <section class="main-section" id="introduction">
