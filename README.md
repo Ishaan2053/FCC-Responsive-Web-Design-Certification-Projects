@@ -5,4 +5,6 @@ Please use this repository as a resource for inspiration and guidance, but do NO
 If you have any questions or feedback, please feel free to open an issue or contact me directly.
 
 ---
-*Source code of projects has been slightly altered to prevent plagarism. Build projects on your own. Copying this code will earn you a certification but won't get you the knowledge that comes with it.
+*Source code of projects has been slightly altered to prevent plagarism.Build projects on your own. Copying this code will earn you a certification but won't get you the knowledge that comes with it.
+
+The pages have been built with the addition of Bootstrap framework alongside for better appearance. Keeping in line with the course's content, JavaScript has not been used in any of the projects.
