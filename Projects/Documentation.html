@@ -18,9 +18,59 @@
 
 </head>
 <body>
-    <header id="main-header">
+  
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="Images\java.png" alt="JavaScript" width="40" height="32" class="d-inline-block align-text-top">
+          JavaScript
+        </a>    
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#">Other Projects </a>
+                <a class="nav-link" href="#">Resume</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#contact" target="_blank">View Certificate</a>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+        </div>
+    </div>
+</nav>
+
+ <!--<div id="Breadcrumbs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Introduction</li>
+    </ol>
+  </nav>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Introduction</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav>
+</div> -->
+
+    <div id="main-header">
         <nav id="navbar">
-          <h1>JavaScript Documentation</h1>
           <ul>
             <li class="nav-link"><a href="#introduction">Introduction</a></li>
             <li class="nav-link"><a href="#what-you">What you should already know</a></li>
@@ -38,57 +88,12 @@
             <li class="nav-link"><a href="#reference">Reference</a></li>
           </ul>
         </nav>
-      </header>
-
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="#">Portfolio</a>
-                    <a class="nav-link" href="#">Other Projects </a>
-                    <a class="nav-link" href="#">Resume</a>
-                </div>
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank">View Course</a>
-                    <a class="nav-link" href="#contact" target="_blank">View Certificate</a>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
-            </div>
-        </div>
-    </nav>
+      </div>
 
 
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Introduction</li>
-        </ol>
-      </nav>
-      
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Introduction</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
-        </ol>
-      </nav>
-      
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
-        </ol>
-      </nav>
-        
         <main id="main-doc">
           <section class="main-section" id="introduction">
-            <header>Introduction</header>
+            <div>Introduction</div>
             <article class="main-article">
               <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language.
                 Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its
@@ -109,7 +114,7 @@
           </section>
       
           <section class="main-section" id="what-you">
-            <header>What you should already know</header>
+            <div>What you should already know</div>
             <article class="main-article">
               <p>This guide assumes you have the following basic background:</p>
               <ul>
@@ -122,7 +127,7 @@
           </section>
       
           <section class="main-section" id="javaScript-and-java">
-            <header>JavaScript and Java</header>
+            <div>JavaScript and Java</div>
             <article class="main-article">
               <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript
                 language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows
@@ -142,7 +147,7 @@
           </section>
       
           <section class="main-section" id="hello-world">
-            <header>Hello world</header>
+            <div>Hello world</div>
             <article class="main-article">
               <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript
                 code:</p>
@@ -153,7 +158,7 @@
           </section>
       
           <section class="main-section" id="variables">
-            <header>Variables</header>
+            <div>Variables</div>
             <article class="main-article">
               <p>You use variables as symbolic names for values in your application. The names of variables, called
                 identifiers, conform to certain rules.</p>
@@ -166,7 +171,7 @@
           </section>
       
           <section class="main-section" id="declaring-variables">
-            <header>Declaring variables</header>
+            <div>Declaring variables</div>
             <article class="main-article">
               <p>You can declare a variable in three ways:</p>
               <p>With the keyword var. For example,</p>
@@ -183,7 +188,7 @@
           </section>
       
           <section class="main-section" id="variable-scope">
-            <header>Variable scope</header>
+            <div>Variable scope</div>
             <article class="main-article">
               <p>When you declare a variable outside of any function, it is called a global variable, because it is available
                 to any other code in the current document. When you declare a variable within a function, it is called a local
@@ -200,7 +205,7 @@
           </section>
       
           <section class="main-section" id="global-variables">
-            <header>Global variables</header>
+            <div>Global variables</div>
             <article class="main-article">
               <p>Global variables are in fact properties of the global object. In web pages the global object is window, so
                 you can set and access global variables using the window.variable syntax.</p>
@@ -211,7 +216,7 @@
           </section>
       
           <section class="main-section" id="constants">
-            <header>Constants</header>
+            <div>Constants</div>
             <article class="main-article">
               <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the
                 same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain
@@ -232,7 +237,7 @@
           </section>
       
           <section class="main-section" id="data-types">
-            <header>Data types</header>
+            <div>Data types</div>
             <article class="main-article">
               <p>The latest ECMAScript standard defines seven data types:</p>
               <ul>
@@ -254,7 +259,7 @@
           </section>
       
           <section class="main-section" id="if-else">
-            <header>if...else statement</header>
+            <div>if...else statement</div>
             <article class="main-article">
               <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to
                 execute a statement if the condition is false. An if statement looks as follows:</p>
@@ -283,7 +288,7 @@
           </section>
       
           <section class="main-section" id="while-statement">
-            <header>while statement</header>
+            <div>while statement</div>
             <article class="main-article">
               <p>A while statement executes its statements as long as a specified condition evaluates to true. A while
                 statement looks as follows:</p>
@@ -309,7 +314,7 @@
           </section>
       
           <section class="main-section" id="function-declarations">
-            <header>Function declarations</header>
+            <div>Function declarations</div>
             <article class="main-article">
               <p>A function definition (also called a function declaration, or function statement) consists of the function
                 keyword, followed by:</p>
@@ -331,7 +336,7 @@
           </section>
       
           <section class="main-section" id="reference">
-            <header>Reference</header>
+            <div>Reference</div>
             <article class="main-article">
               <ul>
                 <li>All the documentation in this page is taken from <a

@@ -7,12 +7,15 @@
     overflow: auto;
   }
 
+  #breadcrumbs .breadcrumb .breadcrumb-item {
+    color: rgb(203, 129, 32);
+  }
+
 /* footer styling */
 #footer {
     background-color:#1a1919;
     text-align: center;
     color: rgb(114, 182, 242);
-    position: sticky;
     bottom: 0;
     min-height: 13vh;
     width: 100%;
@@ -44,15 +47,22 @@
     color: rgb(114, 182, 242);
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color:rgb(114, 182, 242);
   transition: all 0.3s;
   border-radius: 10px;
-  margin: 10px 5px 0px 5px;
+  margin: 10px 5px 10px 5px;
   padding: 0px 10px 0px 10px;
 }
+.navbar-dark {
+  border-bottom: 1px solid rgb(104, 104, 104);
+}
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-brand{
+  color: aliceblue;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
   color:rgb(48, 125, 192);
   box-shadow: 0 0 5px rgb(114, 182, 242);
 }
@@ -60,15 +70,14 @@
  
   #main-header {
     position: fixed;
-    display: flex;
-    top: 10;
+    top: 1;
     left: 0;
     height: 100%;
     min-width: 280px;
     max-width: 300px;
     background-color: rgb(22, 26, 27);
-    display: flexbox;
-    z-index: 1;
+    display: flex;
+    z-index: -1;
   }
   
   #nav flex-column {
@@ -78,12 +87,12 @@
     color: aliceblue;
   }
   
-  #navbar>h1 {
+  /*#navbar>h1 {
     font-size: 1.6rem;
     text-align: center;
     padding: 1rem 0;
     color:rgb(48, 125, 192);
-  }
+  }*/
   
   #navbar ul {
     padding: 0;
@@ -120,8 +129,8 @@
   
   /* main section */
   #main-doc {
-    position: absolute;
-    margin-left: 320px;
+    font-size: 1rem;
+    margin-left: 18rem;
     padding: 2rem;
     color: rgb(114, 182, 242);
   
@@ -154,7 +163,8 @@
     display: block;
     padding: 1.5rem;
     text-align: left;
-    background-color: #ddd;
+    background-color: #0e0e0e;
+    color: rgb(165, 201, 233);
     border-radius: 7px;
     margin-bottom: 1rem;
   }
