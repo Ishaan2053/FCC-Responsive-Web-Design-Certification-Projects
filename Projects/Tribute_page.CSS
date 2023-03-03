@@ -35,11 +35,9 @@ h3 {
 
 
 #Hero-text1 {
-    top: 0;
-    font-size: 80px;
+    font-size: 60px;
     font-family: 'Franklin';
     transition: all 0.3s ease-in-out;
-    z-index: 1;
 }
 
 #Hero-text1:hover {
@@ -48,28 +46,40 @@ h3 {
 }
 
 #Hero-text2 {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Franklin';
     text-align: center;
-    z-index: 1;
+    padding: 0vh 5vw;
 }
 
-#hero {
+.hero {
     height: 100vh;
-    display: flexbox;
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 #heroimage {
     width: 600px;
     height: 600px;
-    transition: all 0.3s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-#heroimage:hover {
-    transform: scale(1.1);
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    flex-basis: 40%;
+
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
 }
 
 #legacyimg {
