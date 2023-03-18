@@ -20,7 +20,7 @@
 <body>
     
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom" aria-label="navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="navbar">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,38 +52,70 @@
 </header>
 
 <main>
-  <div class="p-5 mb-4 bg-dark rounded-3">
-    <div class="container-fluid py-5">
-      <h1 class="display-5 fw-bold">This is Ishaan (*^-^*) </h1>
-      <p class="col-md-8 fs-4 text-white">I'm a front end web developer with a passion for crafting intuitive user interfaces using top of the line technologies, with experience in building responsive websites and web applications.</p>
-      <button class="btn btn-success btn-lg" type="button" href="#about">Know more about me!</button>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="..\Projects\Images\about.jpg" class="d-block mx-lg-auto img-fluid shadow-rounded" alt="My Image" width="400" height="200" loading="lazy" id="heroimage">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Hi! I'm Ishaan</h1>
+        <p class="lead">I'm a front end web developer with a passion for crafting intuitive user interfaces using top of the line technologies, with experience in building responsive websites and web applications. </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a class="btn btn-success btn-lg px-4 me-md-2" href="#about">Get to know about me!</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <section class="py-5 text-center container">
+  <section class="py-5 text-center bg-dark container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 id="about" class="fw-light text-white">About Me</h1>
         <p class="lead text-muted">I'm a Programmer, a Front-End Web Developer, a Freelancer and an avid Videogame Enthusiast</p>
+        <p>I'm a versatile web designer with passion and dedication to continuously learn about new web design trends and concepts. With plenty of experience, I can help customers modernize with websites and appeal to expanding customer populations.</p>
+        
         <p>
-          <a href="#" class="btn btn-success my-2">Check out my skill set!</a>
-          <a href="#custom-cards" class="btn btn-dark my-2">Check out my projects!</a>
+          <a href="#skillset" class="btn btn-success my-2">Check out my skill set!</a>
+         
+          <a href="#custom-cards" class="btn btn-outline-success my-2">Check out my projects!</a>
         </p>
       </div>
     </div>
   </section>
 
+  <div class="p-5 mb-4 rounded-3" id="skillset">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">My skillset </h1>
+      <p class="col-md-8 fs-4 text-white">I'm a front end web developer with a passion for crafting intuitive user interfaces using top of the line technologies, and that needs good knowledge of </p>
+      <div id="skills" class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="colums">
+        <i class="fa-brands fa-github"></i>
+      </div>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-markdown"></i>
+        <i class="fa-brands fa-git"></i>
+        <i class="fa-brands fa-bootstrap"></i>
+      </div>
+     
+      <a class="btn btn-success btn-lg" type="button" href="#custom-cards">Check out my projects!</a>
+    </div>
+  </div>
+
   <div class="container px-4 py-5" id="custom-cards">
     <h2 class="pb-2 border-bottom text-center text-white">My Projects</h2>
+  
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-imageProjects\Images\Card2.png);">
+
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">A Tribue page dedicated to Mahatma Gandhi</h2>
             <ul class="d-flex list-unstyled mt-auto">
               <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+               
                 <small>GitHub</small>
               </li>
             </ul>
@@ -97,7 +129,7 @@
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold user-select-none">Survey Form</h2>
             <ul class="d-flex list-unstyled mt-auto">
               <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                
                 <small>GitHub</small>
               </li>
             </ul>
@@ -106,12 +138,11 @@
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://icons8.com/icon/62856/github');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">MovieFind Product Landing Page</h2>
             <ul class="d-flex list-unstyled mt-auto">            
               <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
                 <small>GitHub</small>
               </li>
             </ul>
@@ -147,12 +178,12 @@
                 </div>
                 <button class="w-100 btn btn-lg btn-success shadow rounded" type="submit">Send E-mail</button>
                 <hr class="my-4">
-                <small class="text-muted">This is a dummy Portfolio and this form is non functional</small>
+                <small class="text-muted">Please don't spam mail.</small>
             </form>
         </div>
     </div>
 </div>
-
+<div id="like_button_container"></div>
 </main>
   <footer id="footer">
     <div class="container-fluid">
@@ -168,6 +199,9 @@
         with it.</sub>
     </div>
   </footer>
+
+  
+
 </body>
 
 </html>
